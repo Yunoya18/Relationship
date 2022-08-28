@@ -209,8 +209,6 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    background: url('#');
-    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
 }
@@ -236,6 +234,7 @@ main .blog-content .btn-blog{
     padding: .7rem 2rem;
     background: var(--sky);
     margin: .5rem;
+    color: #FFC4C4;
 }
 
 main .blog-content span{
@@ -591,10 +590,21 @@ footer.footer .move-up span:hover{
     padding-bottom: 2rem;
     font-family: 'Bai Jamjuree', sans-serif;
     text-indent: 2em;
+    line-height: 2.5rem;
 }
 .image-content{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20rem;
+}
+.arrow-left{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 5%;
 }
