@@ -601,10 +601,10 @@ footer.footer .move-up span:hover{
 .arrow-left{
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 1%;
 }
 .arrow-right{
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 1%;
 }
