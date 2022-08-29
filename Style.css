@@ -585,9 +585,9 @@ footer.footer .move-up span:hover{
     text-align: center;
 }
 .content{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 2rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 2rem;
     font-family: 'Bai Jamjuree', sans-serif;
     text-indent: 2em;
     line-height: 2.5rem;
@@ -607,4 +607,11 @@ footer.footer .move-up span:hover{
     position: absolute;
     top: 50%;
     right: 1%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
