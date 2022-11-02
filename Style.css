@@ -175,9 +175,9 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('#');
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(87, 87, 87, 0.3)),url('components/balloons-g947f90cb6_1920.jpg');
     background-size: cover;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -196,12 +196,6 @@ main .site-title .btn{
     margin: 1.8rem;
     background: var(--sky);
     color: var(--text-light);
-}
-
-main .site-title .btn:hover{
-    background: transparent;
-    border: 5px solid var(--text-gray);
-    color: var(--text-gray);
 }
 
 /* --------x------ Site title --------x------- */
@@ -591,6 +585,7 @@ footer.footer .move-up span:hover{
     font-family: 'Bai Jamjuree', sans-serif;
     text-indent: 2em;
     line-height: 2.5rem;
+    color: #850E35;
 }
 .image-content{
     display: block;
@@ -608,16 +603,88 @@ footer.footer .move-up span:hover{
     top: 50%;
     right: 1%;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 1rem;
+
+.submit{
+    border: none;
+    border-radius: 2rem;
+    justify-items: center;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
 }
-.blog-container{
+
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
-    height: 15rem;
-    background: transparent;
-    border-radius: 40px;
-    border: 3px solid #000;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.modal h1{
+    margin: 0;
+}
+
+.enter{
+    margin-top: 2rem;
+    border: none;
+    border-radius: 2rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+.card img {
+    width: 250px;
+}
+.card .detail {
+    height: 150px;
+    overflow-y: scroll
+}
+ul {
+    padding: 0;
+    margin: 30px;
+    list-style-type: none;
 }
