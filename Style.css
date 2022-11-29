@@ -608,6 +608,7 @@ footer.footer .move-up span:hover{
     border: none;
     border-radius: 2rem;
     justify-items: center;
+    margin-top: 2rem;
     margin-left: 4rem;
     margin-bottom: 2rem;
     padding: 1rem 3rem;
@@ -692,5 +693,10 @@ label{
     display: block;
 }
 input{
-    margin-left: 70px;
+    margin-left: 100px;
+}
+@media only screen and (max-width: 600px) {
+    input{
+      margin-left: 60px;
+    }
 }
