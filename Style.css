@@ -688,3 +688,9 @@ ul {
     margin: 30px;
     list-style-type: none;
 }
+label{
+    display: block;
+}
+input{
+    margin-left: 70px;
+}

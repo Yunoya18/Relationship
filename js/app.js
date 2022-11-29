@@ -33,3 +33,15 @@ form.addEventListener('submit',(e)=>{
     six:form.six.value
   })
 })
+        document.getElementById("addForm").onsubmit=function() {
+               let q1 = parseInt(document.querySelector('input[name = "one"]:checked').value);
+        
+               let result = q1;
+        
+            document.getElementById("score").innerHTML = result;
+        
+        
+        
+        return false; // required to not refresh the page; just leave this here
+        } //this ends the submit function
+        

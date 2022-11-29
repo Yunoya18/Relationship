@@ -43,59 +43,40 @@
 
     <!----------------------------- Main Site Section ------------------------------>
 
-    <main>
-
-        <section>
-            <form id="addForm">
-            <p class="content">มีความละเลยไม่ใส่ใจ ทำให้อีกฝ่ายรู้สึกเหมือนอยู่ตัวคนเดียวหรือให้ความสำคัญแต่เรื่องของตัวเอง<br>
-                <input type="radio" id="one" name="one" value="yes">
-                <label for="one">yes</label><br>
-                <input type="radio" id="one" name="one" value="no">
-                <label for="one">no</label>
-            </p>
-            <p class="content">ความสัมพันธ์ที่ตกเป็นฝ่ายเสียเปรียบ<br>
-                <input type="radio" id="two" name="two" value="yes">
-                <label for="two">yes</label><br>
-                <input type="radio" id="two" name="two" value="no">
-                <label for="two">no</label>
-            </p>
-            <p class="content">รู้สึกว่าตัวเองไม่ปลอดภัยในความสัมพันธ์นี้<br>
-                <input type="radio" id="three" name="three" value="yes">
-                <label for="three">yes</label><br>
-                <input type="radio" id="input-three-no" name="three" value="no">
-                <label for="input-three-no">no</label>
-            </p>
-            <p class="content">เป็นความสัมพันธ์ที่เหนื่อย การได้คุยได้เจอกันแต่ไม่ความสุข มีแต่ความอึดอัด<br>
-                <input type="radio" id="four" name="four" value="yes">
-                <label for="four">yes</label><br>
-                <input type="radio" id="four" name="four" value="no">
-                <label for="four">no</label>
-            </p>
-            <p class="content">รู้สึกเจ็บปวดทั้งกายและใจ<br>
-                <input type="radio" id="five" name="five" value="yes">
-                <label for="five">yes</label><br>
-                <input type="radio" id="five" name="five" value="no">
-                <label for="five">no</label>
-            </p>
-            <p class="content">ไม่มีความส่วนตัว ไม่มีพื้นที่ส่วนตัวของตัวเอง<br>
-                <input type="radio" id="six" name="six" value="yes">
-                <label for="six">yes</label><br>
-                <input type="radio" id="six" name="six" value="no">
-                <label for="six">no</label>
-            </p>
-            <button type="submit" class="submit" id="open">submit</button>
-            </form>
-
-            <div class="modal-container" id="modal_container">
-                <div class="modal">
-                    <h1>ขอบคุณสำหรับข้อมูล!</h1>
-                    <button class="enter" id="close">
-                        ปิด
-                    </button>
-                    <a href="help.html"><button class="enter">ข้อมูล</button></a>
-                </div>
+    <form id="addForm">
+        <p class="content">มีความละเลยไม่ใส่ใจ ทำให้อีกฝ่ายรู้สึกเหมือนอยู่ตัวคนเดียวหรือให้ความสำคัญแต่เรื่องของตัวเอง</p>
+            <label for="one"><input type="radio" name="one" value="1" id="answer1" />yes</label>
+            <label for="one"><input type="radio" name="one" value="0" id="answer2"/>no</label>
+        <p class="content">ความสัมพันธ์ที่ตกเป็นฝ่ายเสียเปรียบ</p>
+            <label for="one"><input type="radio" name="two" value="1" id="answer1" />yes</label>
+            <label for="one"><input type="radio" name="two" value="0" id="answer2"/>no</label>
+        <p class="content">รู้สึกว่าตัวเองไม่ปลอดภัยในความสัมพันธ์นี้</p>
+            <label for="one"><input type="radio" name="three" value="1" id="answer1" />yes</label>
+            <label for="one"><input type="radio" name="three" value="0" id="answer2"/>no</label>
+        <p class="content">รู้สึกเจ็บปวดทั้งกายและใจ</p>
+            <label for="one"><input type="radio" name="four" value="1" id="answer1" />yes</label>
+            <label for="one"><input type="radio" name="four" value="0" id="answer2"/>no</label>
+        <p class="content">ไม่มีความส่วนตัว ไม่มีพื้นที่ส่วนตัวของตัวเอง</p>
+            <label for="one"><input type="radio" name="five" value="1" id="answer1" />yes</label>
+            <label for="one"><input type="radio" name="five" value="0" id="answer2"/>no</label>
+        <p class="content">เป็นความสัมพันธ์ที่เหนื่อย การได้คุยได้เจอกันแต่ไม่ความสุข มีแต่ความอึดอัด</p>
+            <label for="one"><input type="radio" name="six" value="1" id="answer1" />yes</label>
+            <label for="one"><input type="radio" name="six" value="0" id="answer2"/>no</label>
+       
+        <button type="submit" class="submit" id="open" value="submit">submit</button>
+        </form>
+        
+    
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <p>คะแนนของคุณ <span id="score">__</span></p>
+                <button class="enter" id="close">
+                    ปิด
+                </button>
+                <a href="help.html"><button class="enter">ข้อมูลเพิ่มเติม</button></a>
             </div>
-        </section>
+        </div>
+    
 
         
 
