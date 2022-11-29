@@ -20,16 +20,17 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getFirestore(app)
+
 const survey = document.getElementById("survey")
 
 survey.addEventListener('submit',(e)=>{
   e.preventDefault()
   addDoc(collection(db,'survey'),{
+    gender:survey.gender.value,
+    grade:survey.grade.value,
     one:survey.s_one.value,
     two:survey.s_two.value,
     three:survey.s_three.value,
     four:survey.s_four.value,
-    five:survey.s_five.value,
-    six:survey.s_six.value
   })
 })

@@ -46,9 +46,14 @@
 
     <form id="survey">
         <p class="content">เพศ</p>
-            
+            <label for="gender"><input type="radio" name="gender" value="male">ชาย</label>
+            <label for="gender"><input type="radio" name="gender" value="female">หญิง</label>
+            <label for="gender"><input type="radio" name="gender" value="other">อื่นๆ</label>
+            <label for="gender"><input type="radio" name="gender" value="none">ไม่ระบุ</label>
         <p class="content">ระดับชั้น</p>
-
+            <label for="grade"><input type="radio" name="grade" value="4">ม.4</label>
+            <label for="grade"><input type="radio" name="grade" value="5">ม.5</label>
+            <label for="grade"><input type="radio" name="grade" value="6">ม.6</label>
         <p class="content">ข้อมูลมีความถูกต้องและชัดเจน</p>
             <label for="s_one"><input type="radio" name="s_one" value="5" id="answer" />5</label>
             <label for="s_one"><input type="radio" name="s_one" value="4" id="answer" />4</label>
@@ -57,29 +62,38 @@
             <label for="s_one"><input type="radio" name="s_one" value="1" id="answer" />1</label>
 
         <p class="content">ข้อมูลสามารถนำไปใช้ประโยชน์ได้ในชีวิตประจำวัน</p>
-            <label for="s_one"><input type="radio" name="s_two" value="5" id="answer" />5</label>
-            <label for="s_one"><input type="radio" name="s_two" value="4" id="answer" />4</label>
-            <label for="s_one"><input type="radio" name="s_two" value="3" id="answer" />3</label>
-            <label for="s_one"><input type="radio" name="s_two" value="2" id="answer" />2</label>
-            <label for="s_one"><input type="radio" name="s_two" value="1" id="answer" />1</label>
+            <label for="s_two"><input type="radio" name="s_two" value="5" id="answer" />5</label>
+            <label for="s_two"><input type="radio" name="s_two" value="4" id="answer" />4</label>
+            <label for="s_two"><input type="radio" name="s_two" value="3" id="answer" />3</label>
+            <label for="s_two"><input type="radio" name="s_two" value="2" id="answer" />2</label>
+            <label for="s_two"><input type="radio" name="s_two" value="1" id="answer" />1</label>
 
         <p class="content">ขนาดตัวอักษรและรูปแบบของตัวอักษรที่ใช้</p>
-            <label for="s_one"><input type="radio" name="s_three" value="5" id="answer" />5</label>
-            <label for="s_one"><input type="radio" name="s_three" value="4" id="answer" />4</label>
-            <label for="s_one"><input type="radio" name="s_three" value="3" id="answer" />3</label>
-            <label for="s_one"><input type="radio" name="s_three" value="2" id="answer" />2</label>
-            <label for="s_one"><input type="radio" name="s_three" value="1" id="answer" />1</label>
+            <label for="s_three"><input type="radio" name="s_three" value="5" id="answer" />5</label>
+            <label for="s_three"><input type="radio" name="s_three" value="4" id="answer" />4</label>
+            <label for="s_three"><input type="radio" name="s_three" value="3" id="answer" />3</label>
+            <label for="s_three"><input type="radio" name="s_three" value="2" id="answer" />2</label>
+            <label for="s_three"><input type="radio" name="s_three" value="1" id="answer" />1</label>
 
         <p class="content">ความสวยงามของชิ้นงาน</p>
-            <label for="s_one"><input type="radio" name="s_four" value="5" id="answer" />5</label>
-            <label for="s_one"><input type="radio" name="s_four" value="4" id="answer" />4</label>
-            <label for="s_one"><input type="radio" name="s_four" value="3" id="answer" />3</label>
-            <label for="s_one"><input type="radio" name="s_four" value="2" id="answer" />2</label>
-            <label for="s_one"><input type="radio" name="s_four" value="1" id="answer" />1</label>
+            <label for="s_four"><input type="radio" name="s_four" value="5" id="answer" />5</label>
+            <label for="s_four"><input type="radio" name="s_four" value="4" id="answer" />4</label>
+            <label for="s_four"><input type="radio" name="s_four" value="3" id="answer" />3</label>
+            <label for="s_four"><input type="radio" name="s_four" value="2" id="answer" />2</label>
+            <label for="s_four"><input type="radio" name="s_four" value="1" id="answer" />1</label>
 
-        <button type="submit" class="submit" value="submit">submit</button>
+        <button type="submit" class="submit" value="submit" id="open">submit</button>
     </form>
 
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <p>ขอบคุณสำหรับข้อมูล!</p>
+            <button class="enter" id="close">
+                ปิด
+            </button>
+            <a href="help.html"><button class="enter">ข้อมูลเพิ่มเติม</button></a>
+        </div>
+    </div>
 
     <!-- --------------------------- Footer ---------------------------------------- -->
 
@@ -97,7 +111,8 @@
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
 
-    <script type="module" src="js/app.js" charset="utf-8"></script>
+    <script type="module" src="js/survey.js"></script>
+    <script src="js/modal.js"></script>
     <!-- Jquery Library file -->
     <script src="./js/Jquery3.4.1.min.js"></script>
 

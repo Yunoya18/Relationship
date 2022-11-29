@@ -581,7 +581,6 @@ footer.footer .move-up span:hover{
 .content{
     margin-left: 7%;
     margin-right: 7%;
-    margin-bottom: 2rem;
     font-family: 'Bai Jamjuree', sans-serif;
     text-indent: 2em;
     line-height: 2.5rem;
@@ -691,6 +690,8 @@ ul {
 }
 label{
     display: block;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-top: 10px;
 }
 input{
     margin-left: 100px;
