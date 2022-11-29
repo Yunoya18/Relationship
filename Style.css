@@ -579,9 +579,6 @@ footer p{
 
 /* blog */
 
-.title{
-    text-align: center;
-}
 .content{
     margin-left: 7%;
     margin-right: 7%;
@@ -662,36 +659,6 @@ footer p{
     font-family: var(--Livvic);
     cursor: pointer;
 }
-
-.card {
-    width: 300px;
-    height: 500px;
-    background-color: transparent;
-    text-align: center;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    margin: 10px;
-    
-    border-radius: 10px;
-
-    display: inline-block;
-
-    vertical-align: middle;
-}
-.card img {
-    width: 250px;
-}
-.card .detail {
-    height: 150px;
-    overflow-y: scroll
-}
-ul {
-    padding: 0;
-    margin: 30px;
-    list-style-type: none;
-}
 label{
     display: block;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -705,3 +672,39 @@ input{
       margin-left: 60px;
     }
 }
+
+#list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+  }
+
+  .card {
+    width: 45vh;
+    height: 60vh;
+    background-color: rgb(162, 188, 193);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    justify-items: center;
+    color: rgb(2, 31, 74);
+  }
+
+  .card img {
+    width: 30vh;
+    border-radius: 30px;
+  }
+
+  .name{
+    font-size: 3vh;
+  }
+  .text{
+    height: 30vh;
+    overflow-y: scroll;
+  }
