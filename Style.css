@@ -496,6 +496,10 @@ footer.footer .move-up span:hover{
     cursor: pointer;
 }
 
+footer p{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
 /* ---------x------- Footer ----------x---------- */
 
 /*              Viewport less then or equal to 1130px            */
