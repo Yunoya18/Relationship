@@ -527,9 +527,6 @@ footer p{
 /*              Viewport less then or equal to 750px            */
 
 @media only screen and (max-width: 750px){
-    .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
-    }
 
     .nav .toggle-collapse{
         display: initial;
